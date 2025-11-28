@@ -1,23 +1,24 @@
 {
-  "name": "traveloka-scrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "@google/genai": "^1.30.0",
-    "@prisma/client": "^7.0.1",
-    "puppeteer": "^24.31.0",
-    "slug": "^11.0.1"
-  },
-  "devDependencies": {
-    "@types/slug": "^5.0.9",
-    "prisma": "^7.0.1"
-  }
+    "name": "traveloka-scrap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "@google/genai": "^1.30.0",
+        "@prisma/client": "^6.19.0",
+        "puppeteer-core": "^24.31.0",
+        "slug": "^11.0.1"
+    },
+    "devDependencies": {
+        "@types/slug": "^5.0.9",
+        "prisma": "^6.19.0",
+        "tsx": "^4.20.6"
+    }
 }
