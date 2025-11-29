@@ -1,5 +1,6 @@
 // Import the GMaps library from the lib directory
-import GMaps from "../lib/map";
+// import GMaps from "../lib/map";
+import GMaps from "../lib/gMaps"
 
 // Main asynchronous function that runs the scraper
 async function main() {
