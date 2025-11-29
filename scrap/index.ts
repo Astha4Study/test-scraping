@@ -10,10 +10,10 @@ async function main() {
 
   // Flag to decide whether to save data to the database
   // Set to true if you want to save to the database
-  const saveToDB = false;
+  const saveToDB = true;
 
   // List of categories for places to search (e.g., mountains, beaches)
-  const categories = ["bandara", "terminal", "stasiun"];
+  const categories = ["terminal", "stasiun", "bandara"];
 
   // List of provinces in Indonesia to search in
   const provinces = [
@@ -77,18 +77,10 @@ async function main() {
     return apiKey;
   }
 
-  // Loop through each province
-  for (const prov of provinces) {
-    // Loop through each category
-    for (const cat of categories) {
-      // Create a search query combining category and province
+  for (const cat of categories) {
+    for (const prov of provinces) {
       const query = `${cat} di ${prov}`;
-
-      // Get the next API key for this request
       const apikey = getNextApiKey();
-
-      // Call the GMaps instance to get details for the query
-      // Pass the query, save flag, and API key
       await gMapsInstance.getDetails(query, saveToDB, apikey);
     }
   }
